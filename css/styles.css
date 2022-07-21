@@ -17,6 +17,7 @@ li {
 }
 a {
   text-decoration: none; /*wyłącza podkreśnia linków*/
+  color: inherit;
 }
 a:visited {
   color: inherit;
