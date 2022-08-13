@@ -12,13 +12,16 @@ body {
   text-decoration: none;
   font-weight: 400;
 }
+
 li {
   list-style: none; /*wyłącza kropki w listach*/
 }
+
 a {
   text-decoration: none; /*wyłącza podkreśnia linków*/
-  color: inherit;
 }
+
+a:active,
 a:visited {
   color: inherit;
 }
@@ -30,7 +33,6 @@ a:visited {
 .filter:focus {
   background-color: var(--accent-color);
   color: white;
-  border: 1px;
 }
 
 nav {
@@ -60,7 +62,7 @@ figcaption {
   color: #212121;
 }
 
-.navi {
+a.navi {
   font-size: 14px;
   line-height: 1.14;
   color: var(--text-color-dark);
@@ -72,21 +74,14 @@ figcaption {
   color: var(--accent-color);
 }
 
-.contact {
+a.contact {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-color-medium);
 }
 
-.contact:hover {
-  color: var(--accent-color);
-}
-
-.contact a:focus {
-  color: var(--accent-color);
-}
-
-.navi a:focus {
+.contact:hover,
+.contact:focus {
   color: var(--accent-color);
 }
 
@@ -114,26 +109,26 @@ h1 {
 h4 {
   font-weight: 500;
 }
-button {
-  cursor: pointer;
-  font-size: 14;
-  line-height: 1.88;
-  color: white;
-  background-color: var(--accent-color);
-}
+
 .order {
+  background-color: var(--accent-color);
+  color: #fff;
   font-weight: 700;
   letter-spacing: 0.06em;
+  line-height: 1.88;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 42px;
+  padding-right: 41px;
+  border: none;
+  cursor: pointer;
 }
 main {
   background-color: var(--background-color-dark);
   color: white;
 }
 
-button:hover {
-  background-color: var(--accent-color);
-  color: white;
-}
 address {
   color: white;
   font-style: inherit;
@@ -151,15 +146,27 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  border: none;
-
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
 }
 
-.filters button:hover {
+.filter {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.filter:focus,
+.filter:hover {
   background-color: var(--accent-color);
   color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .logo-header :nth-child(1),
@@ -167,6 +174,24 @@ address {
   color: var(--accent-color);
 }
 
+/* .logo-header :nth-child(2) {
+  color: gold;
+}
+
+TO PRÓBY PRZY NAUCE
+
 .logo-footer :nth-child(2) {
-  color: white;
+  color: red;
+} */
+
+.web {
+  color: var(--accent-color);
+}
+
+.studio {
+  color: #000;
+}
+
+footer .studio {
+  color: #fff;
 }
