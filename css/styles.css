@@ -113,7 +113,6 @@ h4 {
 .order {
   background-color: var(--accent-color);
   color: #fff;
-  font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.88;
   border-radius: 4px;
@@ -123,6 +122,7 @@ h4 {
   padding-right: 41px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 main {
   background-color: var(--background-color-dark);
@@ -141,9 +141,8 @@ address {
 }
 
 .filters button {
-  background-color: var(--background-color-medium);
-  color: var(--text-color-dark);
-  font-weight: 500;
+  background-color: #f5f4fa;
+  color: #212121;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -154,11 +153,13 @@ address {
   cursor: pointer;
 }
 
-.filter {
+.filters .filter {
+  color: #212121;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  font-weight: 500;
 }
 
 .filter:focus,
@@ -186,12 +187,20 @@ TO PRÓBY PRZY NAUCE
 
 .web {
   color: var(--accent-color);
+  letter-spacing: 0.03em;
 }
 
 .studio {
   color: #000;
+  letter-spacing: 0.03em;
 }
 
 footer .studio {
   color: #fff;
+  letter-spacing: 0.03em;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
 }
