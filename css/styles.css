@@ -1,14 +1,17 @@
 :root {
-  --background-color-light: #fff;
+  --white-color: #fff;
   --background-color-dark: #2f303a;
   --background-color-medium: #e5e5e5;
   --text-color-dark: #212121;
   --text-color-medium: #757575;
   --accent-color: #2196f3;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 }
+
 body {
-  font-family: "Raleway", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
+  color: var(--text-color-dark);
   text-decoration: none;
   font-weight: 400;
 }
@@ -32,11 +35,11 @@ a:visited {
 
 .filter:focus {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--white-color);
 }
 
 nav {
-  background-color: white;
+  background-color: var(--background-color-light);
 }
 
 footer {
@@ -45,7 +48,7 @@ footer {
 
 .logo-header,
 .logo-footer {
-  font-family: raleway;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -56,10 +59,10 @@ footer {
 }
 
 figcaption {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--text-color-dark);
 }
 
 a.navi {
@@ -90,7 +93,7 @@ a.contact {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color-medium);
 }
 h2 {
   font-weight: 700;
@@ -112,7 +115,7 @@ h4 {
 
 .order {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--white-color);
   letter-spacing: 0.06em;
   line-height: 1.88;
   border-radius: 4px;
@@ -123,14 +126,15 @@ h4 {
   border: none;
   cursor: pointer;
   font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 main {
   background-color: var(--background-color-dark);
-  color: white;
+  color: var(--white-color);
 }
 
 address {
-  color: white;
+  color: var(--white-color);
   font-style: inherit;
 }
 .features p {
@@ -142,7 +146,7 @@ address {
 
 .filters button {
   background-color: #f5f4fa;
-  color: #212121;
+  color: var(--text-color-dark);
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -154,7 +158,7 @@ address {
 }
 
 .filters .filter {
-  color: #212121;
+  color: var(--text-color-dark);
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -165,7 +169,7 @@ address {
 .filter:focus,
 .filter:hover {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -196,11 +200,11 @@ TO PRÓBY PRZY NAUCE
 }
 
 footer .studio {
-  color: #fff;
+  color: var(--white-color);
   letter-spacing: 0.03em;
 }
 
 header {
-  background-color: #fff;
+  background-color: var(--background-color-light);
   border-bottom: 1px solid #ececec;
 }
